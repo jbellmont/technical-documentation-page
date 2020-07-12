@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  --blue-text:#3D7F9A;
 }
 
 body {
@@ -11,7 +12,7 @@ body {
 h1 {
   font-family: 'Merriweather', serif;
   padding: 2% 0% 0% 0%;
-  color: #3D7F9A;
+  color: var(--blue-text);
 }
 
 h1:hover {
@@ -35,11 +36,11 @@ li {
 }
 
 a {
-  color: #3D7F9A;
+  color: var(--blue-text);
 }
 
 hr {
-  border: 2px solid #3D7F9A;
+  border: 2px solid var(--blue-text);
   border-bottom: 0px;
   border-left: 0px;
   border-right: 0px;
@@ -53,7 +54,7 @@ hr {
 }
 
 span {
-  color: #3D7F9A;
+  color: var(--blue-text);
 }
 
 span:hover {
@@ -64,7 +65,7 @@ span:hover {
 }
 
 @keyframes h1-fade {
-  0% {color: #3D7F9A;}
+  0% {color: var(--blue-text);}
   100% {color: #F69E3C;}
 }
 
@@ -78,7 +79,7 @@ code {
 }
 
 b {
-  color: #3D7F9A;
+  color: var(--blue-text);
   font-family: 'Courier New', Courier, monospace;
 }
 
@@ -135,7 +136,6 @@ b {
 }
 
 #navbar ul li a:hover {
-  background-color: #dadada;
   background-color: #FFE8D4;
 }
 
@@ -143,7 +143,6 @@ b {
 /* Main doc */
 
 #main-doc {
-  background-color: white;
   padding: 3% 5% 3% 5%;
   flex: 2.5;
   overflow: auto;
