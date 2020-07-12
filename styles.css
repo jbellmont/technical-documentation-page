@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+  padding: 2% 0% 0% 0%;
+  color: #3D7F9A;
+}
+
+h1:hover {
+  animation-name: h1-fade;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+p {
+  padding: 1% 0% 1% 0%;
+}
+
+ul {
+  padding: 1% 0% 1% 0%;
+}
+
+li {
+  margin-left: 5%;
+  padding: 0% 0% 2% 0%;
+}
+
+a {
+  color: #3D7F9A;
+}
+
+hr {
+  border: 2px solid #3D7F9A;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  padding-bottom: 1%;
+}
+
+.flex-container {
+  display: flex;
+  align-items: stretch;
+  height: 100vh;
+}
+
+span {
+  color: #3D7F9A;
+}
+
+span:hover {
+  animation-name: h1-fade;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes h1-fade {
+  0% {color: #3D7F9A;}
+  100% {color: #F69E3C;}
+}
+
+code {
+  background-color: #FFE8D4;
+  border-left: 5px solid #F69E3C;
+  padding: 2% 1% 2% 1%;
+  margin: 2% 0% 2% 0%;
+  display: block;
+  font-size: 1.2rem;
+}
+
+b {
+  color: #3D7F9A;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Nav-bar */
+
+/* --- mobile nav --- */
+@media (max-width: 700px) {
+
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    /* height: 100vh; */
+  }
+
+  #navbar {
+    height: 30px;
+    overflow: auto;
+    border-bottom: 1px solid #dadada;
+  } 
+}
+
+/* --- desktop nav --- */
+#navbar {
+  flex: 1;
+  background-color: #FCFCFC;
+  border-right: 1px solid #dadada;
+}
+
+#navbar-title {
+  font-family: 'Merriweather', serif;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-align: center;
+  background: #EEEEEE;
+  padding: 20px;
+  border-bottom: 1px solid #dadada;
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar li {
+  margin: 0;
+}
+
+#navbar ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+}
+
+#navbar ul li a:hover {
+  background-color: #dadada;
+  background-color: #FFE8D4;
+}
+
+
+/* Main doc */
+
+#main-doc {
+  background-color: white;
+  padding: 3% 5% 3% 5%;
+  flex: 2.5;
+  overflow: auto;
+}
+
+#main-doc h1 {
+  font-family: 'Merriweather', serif;
+  padding-bottom: 5px;
+}
+
+#main-doc img {
+  width: 100%;
+  height: auto;
+  margin: 2% 0% 2% 0%;
+}
+
+.main-section {
+  padding-bottom: 5%;
+}
