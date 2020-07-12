@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   --blue-text:#3D7F9A;
+  scroll-behavior: smooth;
 }
 
 body {
